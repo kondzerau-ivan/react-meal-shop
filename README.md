@@ -2,7 +2,6 @@ https://vitejs.dev/
 https://react.dev/
 https://v5.reactrouter.com/
 
-https://tailwindcss.com/
-https://flowbite.com/
+https://www.themealdb.com/api.php
 
 https://github.com/tschaub/gh-pages
