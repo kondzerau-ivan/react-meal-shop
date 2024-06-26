@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
-import NotFound from "./pages/404";
+import NotFound from "./pages/NotFound";
 
 const currentYear = new Date().getFullYear();
 function App() {
