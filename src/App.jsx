@@ -12,18 +12,18 @@ const currentYear = new Date().getFullYear();
 function App() {
   return (
     <>
-      <Header />
-      <main className="container content">
-        <Router>
+      <Router>
+        <Header />
+        <main className="container content">
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contacts" component={Contacts} />
             <Route component={NotFound} />
           </Switch>
-        </Router>
-      </main>
-      <Footer />
+        </main>
+        <Footer />
+      </Router>
     </>
   );
 }

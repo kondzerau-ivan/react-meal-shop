@@ -1,22 +1,21 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header>
       <nav className="grey darken-4">
         <div className="container">
           <div className="nav-wrapper">
-            <a href="/" className="brand-logo">
+            <Link to="/" className="brand-logo">
               React Meal Shop
-            </a>
+            </Link>
           </div>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a href="/">Home</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="/about">About</a>
-            </li>
-            <li>
-              <a href="/contacts">Contacts</a>
+              <Link to="/contacts">Contacts</Link>
             </li>
           </ul>
         </div>
