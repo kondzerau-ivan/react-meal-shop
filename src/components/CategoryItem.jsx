@@ -16,7 +16,7 @@ export default function CategoryItem(props) {
         <p>{description}</p>
       </div>
       <div className="card-action">
-        <Link to={`/category/${idCategory}`} className="btn grey darken-4">
+        <Link to={`/category/${strCategory}`} className="btn grey darken-4">
           Go
         </Link>
       </div>
