@@ -7,10 +7,18 @@ body {
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
 #root {
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+.brand-logo {
+  width: max-content;
 }
 
 .page-footer {
@@ -30,4 +38,43 @@ body {
 
 .card-content {
   flex-grow: 1;
+}
+
+.btn-goback {
+  margin-block: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .details {
+    display: grid;
+    grid-template-areas:
+      "heading heading"
+      "image video"
+      "text text";
+    gap: 3rem;
+    margin-top: 1.5rem;
+  }
+  
+  .details-image {
+    grid-area: image;
+    margin-top: 1rem;
+    align-self: center;
+  }
+  
+  .details-heading {
+    grid-area: heading;
+    justify-self: center;
+    margin: 0;
+  }
+  
+  .details-text {
+    grid-area: text;
+  }
+
+  .details-video {
+    max-width: 100%;
+    grid-area: video;
+    justify-self: center;
+    align-self: center;
+  }
 }

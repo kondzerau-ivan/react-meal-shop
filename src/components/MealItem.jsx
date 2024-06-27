@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-
 export default function MealItem({ strMeal, strMealThumb, idMeal }) {
   return (
     <li className="card">
@@ -12,7 +11,7 @@ export default function MealItem({ strMeal, strMealThumb, idMeal }) {
         </h2>
       </div>
       <div className="card-action">
-        <Link to={`/meal/${idMeal}`} className="btn grey darken-4">
+        <Link to={`/details/${idMeal}`} className="btn grey darken-4">
           Details
         </Link>
       </div>

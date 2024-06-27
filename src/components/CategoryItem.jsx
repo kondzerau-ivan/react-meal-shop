@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function CategoryItem(props) {
-  const { idCategory, strCategory, strCategoryThumb, strCategoryDescription } =
-    props;
+  const { idCategory, strCategory, strCategoryThumb, strCategoryDescription } = props;
   const description = strCategoryDescription.split(".")[0] + ".";
   return (
     <li className="card">
