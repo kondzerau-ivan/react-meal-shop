@@ -50,15 +50,13 @@ img {
     grid-template-areas:
       "heading heading"
       "image video"
-      "text text";
+      "text table";
     gap: 3rem;
     margin-top: 1.5rem;
   }
   
   .details-image {
     grid-area: image;
-    margin-top: 1rem;
-    align-self: center;
   }
   
   .details-heading {
@@ -66,15 +64,21 @@ img {
     justify-self: center;
     margin: 0;
   }
-  
-  .details-text {
-    grid-area: text;
-  }
 
   .details-video {
     max-width: 100%;
     grid-area: video;
-    justify-self: center;
+    justify-self: right;
     align-self: center;
+  }
+
+  .details-table {
+    grid-area: table;
+  }
+  
+  .details-text {
+    grid-area: text;
+    line-height: 2.1;
+    white-space: pre-wrap;
   }
 }
