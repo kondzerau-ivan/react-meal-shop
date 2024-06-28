@@ -14,7 +14,7 @@ const currentYear = new Date().getFullYear();
 function App() {
   return (
     <>
-      <Router>
+      <Router basename='/react-meal-shop'>
         <Header />
         <main className="container content">
           <Switch>
